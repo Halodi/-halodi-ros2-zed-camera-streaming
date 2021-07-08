@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.4)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 PROJECT(halodi_ros2_zed_camera_streaming)
 
 option(LINK_SHARED_ZED "Link with the ZED SDK shared executable" ON)
