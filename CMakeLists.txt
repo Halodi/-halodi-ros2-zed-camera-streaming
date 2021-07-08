@@ -1,5 +1,5 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.4)
-PROJECT(ZED_Streaming_Sender)
+PROJECT(halodi_ros2_zed_camera_streaming)
 
 option(LINK_SHARED_ZED "Link with the ZED SDK shared executable" ON)
 
@@ -12,7 +12,6 @@ if(COMMAND cmake_policy)
 	cmake_policy(SET CMP0015 OLD)
 endif(COMMAND cmake_policy)
 
-SET(EXECUTABLE_OUTPUT_PATH ".")
 
 find_package(ZED 3 REQUIRED)
 find_package(CUDA ${ZED_CUDA_VERSION} EXACT REQUIRED)
