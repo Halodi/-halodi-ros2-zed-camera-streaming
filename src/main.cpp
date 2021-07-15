@@ -46,7 +46,8 @@ int main(int argc, char **argv) {
 
     // Set configuration parameters for the ZED
     InitParameters init_parameters;
-    init_parameters.camera_resolution = sl::RESOLUTION::HD720;
+    init_parameters.camera_resolution = sl::RESOLUTION::HD1080;
+    init_parameters.camera_fps = 30;
     init_parameters.depth_mode = DEPTH_MODE::NONE;
     init_parameters.sdk_verbose = true;
     int res_arg = parseArgs(argc, argv, init_parameters);
